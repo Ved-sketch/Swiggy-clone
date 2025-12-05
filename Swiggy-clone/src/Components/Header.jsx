@@ -52,17 +52,17 @@ export default function Header(){
 
             <header className="p-[15px] shadow-xl">
 
-                <div className="max-w-[1200px] mx-auto border border-red-300 flex items-center">
-                    <div className="w-[100px] border border-blue-500">
+                <div className="max-w-[1200px] mx-auto flex items-center">
+                    <div className="w-[100px]">
                         <img className="w-full" src={"../public/logo.png"} alt="logo" />
                     </div>
 
                     <div className="text-4ml font-semibold">
-                        <span className=" hover:text-[#fc8019] font-bold hover:border-b-[3px] border-[orange] duration-200">Malhani</span> 
+                        <span className=" hover:text-[#fc8019] font-bold hover:border-b-[3px] duration-200">Malhani</span> 
                         , Jaunpur, Uttar Pradesh, India <RxCaretDown onClick={showSideMenu} fontSize={25} className="font-b inline text-[#fc8019]"/>
                     </div>
 
-                    <nav className="flex list-none gap-4 ml-auto border border-black font-semibold text-[18px]">
+                    <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px]">
                         {
                         
                             links.map(
