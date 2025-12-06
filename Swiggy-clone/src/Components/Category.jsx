@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {FaArrowRight, FaArrowLeft} from "react-icons/fa6";
-
+    
 export default function Category(){
 
     const [slide,setSlide] = useState(0);
