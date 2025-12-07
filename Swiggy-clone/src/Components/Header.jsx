@@ -41,16 +41,17 @@ export default function Header(){
 
     return (
         <>
-            <div className="black-overlay w-full h-full fixed duration-500" onClick={hideSideMenu} style={{
+            <div className="black-overlay w-full h-full fixed duration-500 top-0 left-0" onClick={hideSideMenu} style={{
                 opacity: toggle ? 1 : 0,
-                visibility: toggle ? "visible" : "hidden"
+                visibility: toggle ? "visible" : "hidden",
+                zIndex: 9999999,
             }}></div>
             
-            <div onClick={(e) => {e.stopPropagation();}} className="w-[500px] bg-white h-full absolute duration-[400ms]" style={{
-                left: toggle ?'0%' : '-100%'
+            <div onClick={(e) => {e.stopPropagation();}} className="w-[500px] bg-white h-full fixed duration-[400ms] top-0 z-[99999999]" style={{
+                left: toggle ?'0%' : '-100%',
             }}></div>
 
-            <header className="p-[15px] shadow-xl">
+            <header className="p-[15px] shadow-xl sticky top-0 bg-white">
 
                 <div className="max-w-[1200px] mx-auto flex items-center">
                     <div className="w-[100px]">

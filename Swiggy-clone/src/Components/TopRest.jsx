@@ -16,7 +16,7 @@ export default function TopRest() {
         }, []);
 
     return (
-        <div className="max-w-[1200px] mx-auto mb-[100px]">
+        <div className="max-w-[1200px] mx-auto">
         
             <div className="flex my-5 items-center justify-between">
 
@@ -37,6 +37,8 @@ export default function TopRest() {
                     )
                 }
             </div>
+
+            <hr className="my-6 border-[1px]"/>
 
         </div>
     );

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client"
 import Header from "./Components/Header";
 import Category from "./Components/Category";
 import TopRest from "./Components/TopRest";
+import OnlineDelivery from "./Components/OnlineDelivery";
 
 function App(){
 
@@ -11,6 +12,7 @@ function App(){
       <Header/>
       <Category/>
       <TopRest/>
+      <OnlineDelivery/>
     </>
   );
 }
